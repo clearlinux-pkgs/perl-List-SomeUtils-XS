@@ -4,7 +4,7 @@
 #
 Name     : perl-List-SomeUtils-XS
 Version  : 0.52
-Release  : 1
+Release  : 2
 URL      : http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.52.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.52.tar.gz
 Summary  : 'XS implementation for List::SomeUtils'
@@ -40,6 +40,7 @@ lib components for the perl-List-SomeUtils-XS package.
 %setup -q -n List-SomeUtils-XS-0.52
 
 %build
+export LANG=C
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make V=1  %{?_smp_mflags}
@@ -69,7 +70,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/List/SomeUtils/XS.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/List/SomeUtils/XS.pm
 
 %files doc
 %defattr(-,root,root,-)
@@ -77,4 +78,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/auto/List/SomeUtils/XS/XS.so
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/auto/List/SomeUtils/XS/XS.so

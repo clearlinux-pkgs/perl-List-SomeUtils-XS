@@ -4,7 +4,7 @@
 #
 Name     : perl-List-SomeUtils-XS
 Version  : 0.52
-Release  : 2
+Release  : 3
 URL      : http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.52.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.52.tar.gz
 Summary  : 'XS implementation for List::SomeUtils'

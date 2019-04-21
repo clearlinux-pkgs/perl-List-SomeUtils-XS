@@ -4,7 +4,7 @@
 #
 Name     : perl-List-SomeUtils-XS
 Version  : 0.58
-Release  : 19
+Release  : 20
 URL      : https://www.cpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.58.tar.gz
 Source0  : https://www.cpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.58.tar.gz
 Summary  : 'XS implementation for List::SomeUtils'
@@ -26,6 +26,7 @@ Summary: dev components for the perl-List-SomeUtils-XS package.
 Group: Development
 Requires: perl-List-SomeUtils-XS-lib = %{version}-%{release}
 Provides: perl-List-SomeUtils-XS-devel = %{version}-%{release}
+Requires: perl-List-SomeUtils-XS = %{version}-%{release}
 
 %description dev
 dev components for the perl-List-SomeUtils-XS package.

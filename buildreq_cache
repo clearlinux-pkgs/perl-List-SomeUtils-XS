@@ -1,2 +1,3 @@
 0.58
+perl(Storable)
 perl(Test::Warnings)
